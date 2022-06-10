@@ -1,8 +1,6 @@
 <script lang="ts">
-import {PersistedValue} from '../../../interactive/PersistedValue';
-const usernameStore = PersistedValue<string>('gh-username');
-let ghUsername = usernameStore.get('saxxie-dev');
-$:  a = usernameStore.set(ghUsername);
+import { LocalStore, LocalStorageKey } from '/src/store/LocalStore';
+const ghUsername = new LocalStore(LocalStorageKey.ghUsername, 'saxxie-dev');
 
 </script>
 <article>
@@ -17,15 +15,15 @@ $:  a = usernameStore.set(ghUsername);
   it needs to be done again.
 </aside>
 
-Github username: <input type="text" bind:value={ghUsername}/>
+Github username: <input type="text" bind:value={$ghUsername}/>
 
 <section>
   <h2>Setting up gh-pages</h2>
   Create a git repository. If this is your "main" github site, it should match the url
-  it will be hosted at (<a href="https://github.com/saxxie-dev/saxxie-dev.github.io">{ghUsername}.github.io</a>).
+  it will be hosted at (<a href="https://github.com/saxxie-dev/saxxie-dev.github.io">{$ghUsername}.github.io</a>).
   <br/>
   Next we need to enable github pages. Open your repository at 
-  <a href="https://github.com/{ghUsername}/saxxie-dev.github.io"> S</a>
+  <a href="https://github.com/{$ghUsername}/saxxie-dev.github.io"> S</a>
 
   https://javascript.plainenglish.io/sveltekit-github-pages-4fe2844773de
 </section>

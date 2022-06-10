@@ -1,0 +1,53 @@
+@import 'src/styles/colors';
+
+$bgdark: #202830;
+
+@debug scale-color(#{$bgdark}, $lightness: 10%);
+
+@mixin darkmode {
+  --color-background: #{$bgdark};
+  --color-text: #{$textlight};
+  --color-border: #{$textlight};
+  --color-active: #{scale-color(#{$bgdark},
+  $lightness: 10%)
+}
+
+;
+}
+
+@mixin lightmode {
+  --color-background: #{$bglight};
+  --color-text: #{$textdark};
+  --color-border: #{$textdark};
+  --color-active: #{scale-color(
+ #{$bglight},
+  $lightness: -10%)
+}
+
+;
+}
+
+@media(prefers-color-scheme: dark) {
+  :global body {
+    @include darkmode
+  }
+
+  :global body.lightmode {
+    @include lightmode
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  :global body {
+    @include lightmode
+  }
+
+  :global body.darkmode {
+    @include darkmode
+  }
+}
+
+:global body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

@@ -17,7 +17,17 @@
 </head>
 
 <body>
-	<div>%svelte.body%</div>
+	<script>
+		const _is_global_darkmode_enabled_ = JSON.parse(
+			localStorage.getItem("*persisted-darkmode-override"));
+		if (_is_global_darkmode_enabled_ !== null) {
+			console.log('pree', _is_global_darkmode_enabled_, document.body.classList.entries());
+			document.body.classList.toggle('darkmode', _is_global_darkmode_enabled_);
+			document.body.classList.toggle('lightmode', !_is_global_darkmode_enabled_);
+			console.log(document.body.classList.entries());
+		}
+	</script>
+	%svelte.body%
 </body>
 
 </html>
