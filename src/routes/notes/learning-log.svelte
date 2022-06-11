@@ -1,8 +1,8 @@
 <script lang='ts'>
   import ToLearn from '../../components/ToLearn.svelte';
-  import DarkModeToggle from '../../components/DarkModeToggle.svelte';
+  import Header from '../../components/DarkModeToggle.svelte';
 </script>
-<DarkModeToggle/>
+<Header/>
 <article>
   <ToLearn
     title="yay"

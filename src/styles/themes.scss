@@ -1,30 +1,28 @@
+@use "sass:color";
 @import 'src/styles/colors';
 
-$bgdark: #202830;
 
-@debug scale-color(#{$bgdark}, $lightness: 10%);
+
+@debug color.scale($bgdark, $lightness: 10%);
 
 @mixin darkmode {
   --color-background: #{$bgdark};
   --color-text: #{$textlight};
-  --color-border: #{$textlight};
-  --color-active: #{scale-color(#{$bgdark},
-  $lightness: 10%)
-}
-
-;
+  --color-border: #{$borderlight};
+  --color-background-hover: #{color.scale($bgdark, $lightness: 10%)};
+  --color-background-click: #{color.scale($bgdark, $lightness: 20%)};
+  --color-border-hover: #{color.scale($borderlight, $lightness: -10%)};
+  --color-border-click: #{color.scale($borderlight, $lightness: -20%)};
 }
 
 @mixin lightmode {
   --color-background: #{$bglight};
   --color-text: #{$textdark};
-  --color-border: #{$textdark};
-  --color-active: #{scale-color(
- #{$bglight},
-  $lightness: -10%)
-}
-
-;
+  --color-border: #{$borderdark};
+  --color-background-hover: #{scale-color($bglight, $lightness: -10%)};
+  --color-background-click: #{scale-color($bglight, $lightness: -20%)};
+  --color-border-hover: #{color.scale($borderdark, $lightness: 10%)};
+  --color-border-click: #{color.scale($borderdark, $lightness: 20%)};
 }
 
 @media(prefers-color-scheme: dark) {
