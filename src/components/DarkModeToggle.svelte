@@ -2,7 +2,6 @@
   import { browser } from '$app/env';
   import { darkmode } from '../store/DarkmodeStore'
 
-  console.log($darkmode);
   $: if(browser) {
     document.body.classList.toggle('darkmode', $darkmode);
     document.body.classList.toggle('lightmode', !$darkmode);
@@ -37,6 +36,11 @@ input {
   position: fixed;
   &:checked + .slider {
     @include slideRight;
+  }
+  &:focus-visible + .slider {
+    border-color: Highlight;
+    border-color: -webkit-focus-ring-color;
+    background-color: var(--color-background-hover);
   }
 }
 :global body.darkmode {

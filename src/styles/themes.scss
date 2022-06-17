@@ -2,27 +2,28 @@
 @import 'src/styles/colors';
 
 
-
-@debug color.scale($bgdark, $lightness: 10%);
-
 @mixin darkmode {
   --color-background: #{$bgdark};
   --color-text: #{$textlight};
+  --color-text-light: #{color.scale($textlight, $lightness: -20%)};
   --color-border: #{$borderlight};
   --color-background-hover: #{color.scale($bgdark, $lightness: 10%)};
   --color-background-click: #{color.scale($bgdark, $lightness: 20%)};
   --color-border-hover: #{color.scale($borderlight, $lightness: -10%)};
   --color-border-click: #{color.scale($borderlight, $lightness: -20%)};
+  --color-link: #8cb4ff;
 }
 
 @mixin lightmode {
   --color-background: #{$bglight};
   --color-text: #{$textdark};
+  --color-text-light: #{color.scale($textdark, $lightness: 20%)};
   --color-border: #{$borderdark};
   --color-background-hover: #{scale-color($bglight, $lightness: -10%)};
   --color-background-click: #{scale-color($bglight, $lightness: -20%)};
   --color-border-hover: #{color.scale($borderdark, $lightness: 10%)};
   --color-border-click: #{color.scale($borderdark, $lightness: 20%)};
+  --color-link: #496eb3;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -48,4 +49,9 @@
 :global body {
   background-color: var(--color-background);
   color: var(--color-text);
+  margin: 0px;
+
+  & a {
+    color: var(--color-link);
+  }
 }
