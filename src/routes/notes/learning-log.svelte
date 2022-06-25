@@ -23,8 +23,17 @@
 <article>
   <aside>
     Things I've read/watched, want to read/watch, etc. I'll be including things only
-    if they're involved enough to be worth tracking.
+    if they're involved enough to be worth tracking my progress on.
   </aside>
+  <ToLearn 
+    title="Learn Rust With Entirely Too Many Linked Lists"
+    links={[
+      ['Ebook', 
+      'https://rust-unofficial.github.io/too-many-lists/index.html'],
+    ]}
+    progress={[5,8]}
+    review="The funniest premise for an intro-to-X-language book I've seen. The content is great too; great practice of 'who owns what' within persistent data structures"
+  />
   <ToLearn 
     title="Jacobs + Rutten introductions to (co)algebra and (co)induction"
     links={[
@@ -45,7 +54,7 @@
       ['Course Site',
       'http://www.cs.cmu.edu/~rwh/courses/hott/']
     ]}
-    progress={[6,23]}
+    progress={[7,23]}
     review='Most *complete* HoTT video lectures currently published, as far as I can tell. That should be changing very soon, however.'
   />
   <ToLearn
