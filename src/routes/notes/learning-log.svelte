@@ -25,13 +25,47 @@
     Things I've read/watched, want to read/watch, etc. I'll be including things only
     if they're involved enough to be worth tracking my progress on.
   </aside>
+  <ToLearn
+    title='Visual Group Theory'
+    links={[[
+      'PDF',
+      'https://raw.githubusercontent.com/liwei766/visual-group-theory/master/visual%20group%20theory.pdf']]}
+    progress={[7,10]}/>
+  <ToLearn 
+    title='HoTTEST Summer school'
+    links={[[
+      'Lectures',
+      'https://www.youtube.com/playlist?list=PLtIZ5qxwSNnzpNqfXzJjlHI9yCAzRzKtx'
+    ],[
+      'Course site',
+      'https://uwo.ca/math/faculty/kapulkin/seminars/hottest_summer_school_2022.html'
+    ]]}
+    progress={[3,7]}
+    />
+  <ToLearn
+    title='Avigad - Logic and Proof'
+    links={[[
+      'PDF',
+      'https://leanprover.github.io/logic_and_proof/logic_and_proof.pdf',
+    ]]}
+    progress={[0,24]}
+    />
+  <ToLearn 
+    title="Out of the East - Spices and the Medieval Imagination"
+    links={[[
+      'PDF',
+      'https://literacias.net/bibliodigital/download/368/Out%20of%20the%20East%20Spices%20and%20the%20-%20Paul%20Freedman.pdf'
+    ]]}
+    progress={[56, 301]}
+    review='Easy read about just how chaotic the history of the spice trade was, was reminded about this book from a tiktok'
+    />
   <ToLearn 
     title="Learn Rust With Entirely Too Many Linked Lists"
     links={[
       ['Ebook', 
       'https://rust-unofficial.github.io/too-many-lists/index.html'],
     ]}
-    progress={[5,8]}
+    progress={[8,8]}
     review="The funniest premise for an intro-to-X-language book I've seen. The content is great too; great practice of 'who owns what' within persistent data structures"
   />
   <ToLearn 

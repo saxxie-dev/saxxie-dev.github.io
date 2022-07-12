@@ -24,10 +24,6 @@
       fill: var(--color-border-hover);
     }
   }
-  div {
-    position: relative;
-    z-index:190;
-  }
   text {
     font: 0.35pt fira sans sans-serif;
     fill: var(--color-text);
