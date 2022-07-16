@@ -26,6 +26,19 @@
     if they're involved enough to be worth tracking my progress on.
   </aside>
   <ToLearn
+    title="Databases, Types, and the Relational Model"
+    links={[[
+      'PDF',
+      'https://www.dcs.warwick.ac.uk/~hugh/TTM/DTATRM.pdf',
+      ]]}
+      progress={[0,16]}/>
+  <ToLearn
+    title="Introduction to Categories and Categorical Logic"
+    links={[[
+      'PDF',
+      'https://arxiv.org/pdf/1102.1313v1.pdf']]}
+      progress={[0,8]}/>
+  <ToLearn
     title='Visual Group Theory'
     links={[[
       'PDF',
