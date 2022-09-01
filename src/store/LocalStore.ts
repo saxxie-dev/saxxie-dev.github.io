@@ -1,4 +1,4 @@
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 import type { Optional } from 'data-structures/Optional';
 import type { Subscriber, Updater, Writable } from 'svelte/store';
 

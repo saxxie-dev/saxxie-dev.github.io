@@ -1,6 +1,6 @@
 <script lang='ts'>
-  import ToLearn from '../../components/ToLearn.svelte';
-  import Header from '../../components/Header.svelte';
+  import ToLearn from '../../../components/ToLearn.svelte';
+  import Header from '../../../components/Header.svelte';
 </script>
 <style>
   article {

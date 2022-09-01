@@ -14,12 +14,16 @@
 		rel="stylesheet">
 
 	<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/assets/pages/blog/22-4/gh-pages-svelte-namecheap.svelte-fca8aa0c.css">
-	<link rel="modulepreload" href="/_app/start-ff968a5b.js">
-	<link rel="modulepreload" href="/_app/chunks/index-061f4183.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-bee0e80a.js">
-	<link rel="modulepreload" href="/_app/pages/blog/22-4/gh-pages-svelte-namecheap.svelte-575c2e40.js">
-	<link rel="modulepreload" href="/_app/chunks/LocalStore-76516329.js">
+	<link href="../../_app/immutable/assets/Header-857f7152.css" rel="stylesheet">
+	<link href="../../_app/immutable/assets/_page-5e98fbbf.css" rel="stylesheet">
+	<link rel="modulepreload" href="../../_app/immutable/start-77062d0d.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-6970f8fd.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/singletons-d5387a6e.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/layout.svelte-081f2337.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/blog/_layout.svelte-af6a198c.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Header-31bd6362.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/LocalStore-1308d339.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/blog/22-4/namecheap-ghpages-svelte/_page.svelte-d90dfff7.js">
 </head>
 
 <body>
@@ -36,6 +40,9 @@
 	
 
 
+<header class="svelte-16hkxuc"><a href="https://saxxie.dev" class="svelte-16hkxuc">saxxie.dev</a>
+  <label class="switch svelte-11e8ebp"><input type="checkbox" class="svelte-11e8ebp">
+  <span class="slider svelte-11e8ebp" title="Toggle dark mode (false)"></span></label></header>
 <article><h1>Setting up a website with github pages, sveltekit, and namecheap in 2022
 </h1>
 
@@ -81,27 +88,29 @@
     double check <a href="https://github.com/saxxie-dev/saxxie-dev.github.io/settings/pages">the page settings</a> to make sure everything there still works.</p></section></article>
 
 
-		<script type="module" data-hydrate="nwdxdl">
-		import { start } from "/_app/start-ff968a5b.js";
+		<script type="module" data-sveltekit-hydrate="1xbhod2">
+		import { set_public_env, start } from "../../_app/immutable/start-77062d0d.js";
+
+		set_public_env({});
+
 		start({
-			target: document.querySelector('[data-hydrate="nwdxdl"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1xbhod2"]').parentNode,
 			paths: {"base":"","assets":""},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "never",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/_app/layout.svelte-bee0e80a.js"),
-						import("/_app/pages/blog/22-4/gh-pages-svelte-namecheap.svelte-575c2e40.js")
-				],
+				node_ids: [0, 2, 5],
 				params: {},
-				routeId: "blog/22-4/gh-pages-svelte-namecheap"
+				routeId: "blog/22-4/namecheap-ghpages-svelte",
+				data: (function(a){return [a,a,a]}(null)),
+				errors: null
 			}
 		});
 	</script>
+	
 </body>
 
 </html>

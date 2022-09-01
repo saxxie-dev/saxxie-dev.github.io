@@ -14,10 +14,11 @@
 		rel="stylesheet">
 
 	<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/start-ff968a5b.js">
-	<link rel="modulepreload" href="/_app/chunks/index-061f4183.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-bee0e80a.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-baf3fe6c.js">
+	<link rel="modulepreload" href="./_app/immutable/start-77062d0d.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-6970f8fd.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d5387a6e.js">
+	<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-081f2337.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-5dd3ef1a.js">
 </head>
 
 <body>
@@ -43,27 +44,29 @@
   <li><a href="https://twitter.com/cssachse">twitter</a></li></ul>
 
 
-		<script type="module" data-hydrate="16y5tqk">
-		import { start } from "/_app/start-ff968a5b.js";
+		<script type="module" data-sveltekit-hydrate="16y5tqk">
+		import { set_public_env, start } from "./_app/immutable/start-77062d0d.js";
+
+		set_public_env({});
+
 		start({
-			target: document.querySelector('[data-hydrate="16y5tqk"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="16y5tqk"]').parentNode,
 			paths: {"base":"","assets":""},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "never",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/_app/layout.svelte-bee0e80a.js"),
-						import("/_app/pages/index.svelte-baf3fe6c.js")
-				],
+				node_ids: [0, 4],
 				params: {},
-				routeId: ""
+				routeId: "",
+				data: (function(a){return [a,a]}(null)),
+				errors: null
 			}
 		});
 	</script>
+	
 </body>
 
 </html>

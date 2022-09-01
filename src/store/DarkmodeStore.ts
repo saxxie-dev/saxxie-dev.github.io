@@ -1,6 +1,6 @@
 // Based loosely on: https://www.chrsjxn.io/svelte/theme-store
 
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 import { Optional } from '../data-structures/Optional';
 import type { Subscriber, Writable } from 'svelte/store';
 import { LocalStorageKey, LocalStore } from './LocalStore';
