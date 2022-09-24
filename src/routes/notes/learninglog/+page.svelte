@@ -25,6 +25,16 @@
     Things I've read/watched, want to read/watch, etc. I'll be including things only
     if they're involved enough to be worth tracking my progress on.
   </aside>
+  <ToLearn 
+    title="Introduction to Literary Chinese, Part One"
+    links={[["PDF", "https://scholarworks.iu.edu/dspace/bitstream/handle/2022/23481/Wenyan-Primer-v1.pdf"]]}
+    progress={[2,14]}
+    />
+  <ToLearn 
+    title="Crafting Interpreters"
+    links={[["Website", "https://craftinginterpreters.com/contents.html"]]}
+    progress={[7,30]}
+    />
   <ToLearn
     title="Databases, Types, and the Relational Model"
     links={[[
@@ -53,7 +63,7 @@
       'Course site',
       'https://uwo.ca/math/faculty/kapulkin/seminars/hottest_summer_school_2022.html'
     ]]}
-    progress={[3,7]}
+    progress={[3,12]}
     />
   <ToLearn
     title='Avigad - Logic and Proof'
