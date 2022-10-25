@@ -26,6 +26,11 @@
     if they're involved enough to be worth tracking my progress on.
   </aside>
   <ToLearn 
+    title="Implementing a modal dependent type theory"
+    links={[["Paper", "https://dl.acm.org/doi/10.1145/3341711"]]}
+    progress={[1,29]}
+    />
+  <ToLearn 
     title="Introduction to Literary Chinese, Part One"
     links={[["PDF", "https://scholarworks.iu.edu/dspace/bitstream/handle/2022/23481/Wenyan-Primer-v1.pdf"]]}
     progress={[2,14]}
