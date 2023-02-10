@@ -22,6 +22,7 @@
     </p>
     <ul>
       <li><a href='https://www.tiktok.com/@saxxie.dev'>tiktok: 7000 followers</a></li>
+      <li><a href='https://www.twitch.tv/saxxie_dev'>twitch: 8 followers</a></li>
       <li><a href='https://www.youtube.com/@saxxie-dev'>youtube: 1 subscriber</a></li>
       <li><a href='https://types.pl/@saxxie'>mastodon: 3 followers</a></li>
       <li><a href='https://github.com/saxxie-dev'>github</a></li>
