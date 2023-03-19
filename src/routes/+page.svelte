@@ -1,36 +1,35 @@
-<style>
-  div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-  }
-  section {
-    padding: 10px;
-    border: 3px solid white;
-    border-radius: 5px;
-  }
-</style>
+<script lang="ts">
+  import Socials from "../components/socials/Socials.svelte";
+  import Projects from "../components/projects/Projects.svelte";
+</script>
 
-<div>
-  <span/>
-  <section>
-    <h1>About</h1>
-    <p>
-      This site is still being built up from scratch, come back soon <br/>
-      In the mean time, check out my socials!
-    </p>
-    <ul>
-      <li><a href='https://www.tiktok.com/@saxxie.dev'>tiktok: 7000 followers</a></li>
-      <li><a href='https://www.twitch.tv/saxxie_dev'>twitch: 8 followers</a></li>
-      <li><a href='https://www.youtube.com/@saxxie-dev'>youtube: 1 subscriber</a></li>
-      <li><a href='https://types.pl/@saxxie'>mastodon: 3 followers</a></li>
-      <li><a href='https://github.com/saxxie-dev'>github</a></li>
-      <li><a href='mailto: c@saxxie.dev'>email</a></li>
-    </ul>
+<div class="mt-4 flex flex-col md:flex-row md:justify-around grow md:gap-4 md:p-4 md:items-start" >
+  <section class="border-slate-200 dark:border-slate-700 border-b md:border md:rounded-lg overflow-hidden grow-0">
+    <div class="max-w-md m-auto">
+      <h1 class="p-4 dark:md:bg-slate-700 md:bg-slate-200">About</h1>
+      <div class="p-4">
+        <p>
+          👋 Hi! I'm saxxie - software engineer and occasional nanoinfluencer.
+        </p>
+        <p class="pt-4">
+          I'm mainly interested in Algebra, Category Theory, and languages (both spoken-language and programming-languages)
+        </p>
+        <p class="pt-4">
+          Follow along at
+        </p>
+      </div>
+      <div class="p-2 dark:md:bg-slate-700 md:bg-slate-200">
+        <Socials/>
+      </div>
+    </div>
   </section>
-  <section>
-
+  <section class="border-slate-200 dark:border-slate-700 md:border md:rounded-lg overflow-hidden grow-0">
+    <div class="max-w-xl m-auto">
+      <div class="p-4 dark:md:bg-slate-700 md:bg-slate-200"><h1 class="mb-2">Projects</h1>
+        <aside class="text-sm dark:text-slate-300 text-slate-500">Cool things I've made, mostly solo.</aside>
+      </div>
+      <Projects/>
+    </div>
+      
   </section>
-  <span/>
 </div>

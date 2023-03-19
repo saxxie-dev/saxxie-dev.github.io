@@ -7,7 +7,7 @@
 
   import ProgressCircle from './ProgressCircle.svelte';
 </script>
-<style lang='scss'>
+<style>
   section {
     display: flex;
     border: 2px solid var(--color-border-click);

@@ -20,18 +20,23 @@
 	%sveltekit.head%
 </head>
 
-<body>
+<body class="
+	bg-white 
+	dark:bg-slate-800
+	text-slate-800
+	dark:text-slate-50">
 	<script>
 		const _is_global_darkmode_enabled_ = JSON.parse(
 			localStorage.getItem("*persisted-darkmode-override"));
 		if (_is_global_darkmode_enabled_ !== null) {
 			console.log('pree', _is_global_darkmode_enabled_, document.body.classList.entries());
-			document.body.classList.toggle('darkmode', _is_global_darkmode_enabled_);
-			document.body.classList.toggle('lightmode', !_is_global_darkmode_enabled_);
+			document.documentElement.classList.toggle('dark', _is_global_darkmode_enabled_);
 			console.log(document.body.classList.entries());
 		}
 	</script>
-	%sveltekit.body%
+	<div class="flex flex-col justify-between h-screen">
+		%sveltekit.body%
+	</div>
 </body>
 
 </html>

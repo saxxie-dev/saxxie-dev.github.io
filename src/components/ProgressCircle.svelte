@@ -5,7 +5,7 @@
   const str = `${progress[0]}/${progress[1]}`;
   const strlen = str.length;
 </script>
-<style lang='scss'>
+<style>
   svg {
     width: 100px;
     height: 100px;
@@ -21,9 +21,9 @@
   }
   path {
     fill: var(--color-border);
-    &:hover {
-      fill: var(--color-border-hover);
-    }
+  }
+  path:hover {
+    fill: var(--color-border-hover);
   }
   text {
     font-family: fira sans;
